@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace UnitTesting
 {
-    public class Class1
-    {
-    }
+	public static class MathHelper
+	{
+		public static float DegToRad(float angle)
+		{
+			return (float)(Math.PI * angle) / 180f;
+		}
+	}
 }
