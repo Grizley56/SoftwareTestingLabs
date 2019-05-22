@@ -1,0 +1,141 @@
+{
+  "id": "e0292e1f-7f89-4c4a-b9ad-f3163e6f5a88",
+  "version": "2.0",
+  "name": "wiki nunit ",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "e2b98829-801f-4b0f-a9b9-db6df59834ed",
+    "name": "russian thread contains",
+    "commands": [{
+      "id": "c148bf57-65fe-4bdd-b187-1525e2f7a5af",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccd0321c-69b1-4903-be9c-4c081b6bbb45",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf3e0581-ba73-4a3b-acba-d31b9519296d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "unit testing"
+    }, {
+      "id": "9bb51d6d-ca21-4f8d-bc55-7123bab4424a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@name='btnK'])[2]",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div[3]/center/input", "xpath:idRelative"],
+        ["xpath=//div[3]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7da9041d-62f3-42ee-a869-54c520bdd5c0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//cite[@class=\"iUh30\" and text() = \"https://en.wikipedia.org/wiki/Unit_testing\"]",
+      "targets": [
+        ["css=.g:nth-child(1) > div > .rc > .r", "css:finder"],
+        ["xpath=//div[@id='rso']/div[3]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06522b0a-4a74-4aa7-8d48-23671baa87c3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//cite[@class=\"iUh30\" and text() = \"https://en.wikipedia.org/wiki/Unit_testing\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e05cbcf2-a12c-4173-ae4f-d5ee73acf799",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6a25466-a35d-4b20-83be-63b0bdf73ec3",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "NUnit"
+    }, {
+      "id": "746beac1-982b-415e-81a9-6fa2afd68c21",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchButton",
+      "targets": [
+        ["id=searchButton", "id"],
+        ["name=go", "name"],
+        ["css=#searchButton", "css:finder"],
+        ["xpath=//input[@id='searchButton']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1121f296-c200-457b-ba41-df41858745cb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//li//a[@class=\"interlanguage-link-target\" and text() = \"Русский\"]",
+      "targets": [
+        ["linkText=Русский", "linkText"],
+        ["css=.interwiki-ru > .interlanguage-link-target", "css:finder"],
+        ["xpath=//a[contains(text(),'Русский')]", "xpath:link"],
+        ["xpath=//div[@id='p-lang']/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ru.wikipedia.org/wiki/NUnit')]", "xpath:href"],
+        ["xpath=//div[2]/div[6]/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Русский')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b5da98fc-372b-4528-9f2c-b01aba6d1031",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2b98829-801f-4b0f-a9b9-db6df59834ed"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
